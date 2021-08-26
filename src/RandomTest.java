@@ -1,6 +1,6 @@
 // 자바 API를 불러옴
 import java.lang.Math;
-// import java.util.Random;
+import java.util.Random;
 
 public class RandomTest {
     public static void main(String[] args) {
@@ -26,8 +26,9 @@ class DieA {
 class DieB {
     public static int roll() {
         /* Random 클래스를 활용하여 주사위의 눈값(1 ~ 6)을 반환하시오.*/
-        double r = Math.random() * 6;
-        int randInt = (int)r;
-        return randInt + 1;
+        Random rand = new Random();
+        int ni = rand.nextInt(6); // 0 ~ 5 중 하나 반환
+        return ni + 1;
+
     }
 }
