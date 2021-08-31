@@ -1,12 +1,26 @@
+import java.util.ArrayList;
+
 public class ElvesTest {
     public static void main(String[] args) {
-        Elf elf = new Elf("티란데", 100);
-        HighElf highElf = new HighElf("말퓨리온", 160, 100);
-        ElfLord elfLord = new ElfLord("마이에브", 230, 140, 100);
 
-        System.out.println(elf.toString());
-        System.out.println(highElf.toString());
-        System.out.println(elfLord.toString());
+        // 엘프 객체 생성 & 업 캐스팅 (부모 타입으로 해석)
+        Elf elf = new Elf("티란데", 100);
+        Elf highElf = new HighElf("말퓨리온", 160, 100);
+        Elf elfLord = new ElfLord("마이에브", 230, 140, 100);
+
+        // 업 케스팅
+//        Elf[] elves = {elf, highElf, elfLord};
+
+        // ArrayList 로 리팩토링
+        ArrayList<Elf> list = new ArrayList<Elf>();
+        list.add(elf);
+        list.add(highElf);
+        list.add(elfLord);
+
+        for(int i=0; i < list.size(); i++){
+            System.out.println(list.get(i).toString());
+        }
+
     }
 }
 
