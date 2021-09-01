@@ -37,5 +37,6 @@ public class SmartPhoneTest {
         public void ring() {
             System.out.println("전화벨이 울립니다~");
         }
+
     }
 
