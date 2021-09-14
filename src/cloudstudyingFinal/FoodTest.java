@@ -13,17 +13,15 @@ public class FoodTest {
         foods.add(pizza);
         foods.add(sushi);
 
-        String result;
         for(int i = 0; i < foods.size(); i++){
-            result = foods.get(i).toString();
-            System.out.println(result);
+            System.out.println(foods.get(i).toString());
         }
     }
 }
 
 class Food {
-    public String foodName;
-    public int price;
+    protected String foodName;
+    protected int price;
 
     public Food(String foodName, int price) {
         this.foodName = foodName;
