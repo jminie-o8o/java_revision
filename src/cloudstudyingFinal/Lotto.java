@@ -20,7 +20,7 @@ class RandomNumGenerate{
     public List<Integer> randomMake(){
         List<Integer> lottoNum = new ArrayList<>();
 
-        for(int i = 0; i < 6; i++){
+        while (lottoNum.size() != 6){
             int number = random.nextInt(45) + 1;
             if(!lottoNum.contains(number)){
                 lottoNum.add(number);
