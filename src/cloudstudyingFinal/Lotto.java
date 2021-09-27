@@ -1,6 +1,7 @@
 package cloudstudyingFinal;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
@@ -26,6 +27,7 @@ class RandomNumGenerate{
                 lottoNum.add(number);
             }
         }
+        Collections.sort(lottoNum);
         return lottoNum;
     }
 }
