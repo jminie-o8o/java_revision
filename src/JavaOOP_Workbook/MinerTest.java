@@ -1,4 +1,4 @@
-package cloudstudyingFinal;
+package JavaOOP_Workbook;
 
 public class MinerTest {
     public static void main(String[] args) {
