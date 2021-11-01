@@ -10,6 +10,7 @@ public class Local {
         City Incheon = new City("인천" ,46);
         City Daejeon = new City("대전" ,43);
         City Daegu = new City("대구" ,27);
+        City Ulsan = new City("울산" ,20);
 
         ArrayList<City> cities = new ArrayList<>();
         cities.add(Seoul);
@@ -17,6 +18,7 @@ public class Local {
         cities.add(Incheon);
         cities.add(Daejeon);
         cities.add(Daegu);
+        cities.add(Ulsan);
         for (int i = 0; i < cities.size(); i++) {
             System.out.printf("%s: %d 명\n", cities.get(i).city, cities.get(i).visitors);
         }
